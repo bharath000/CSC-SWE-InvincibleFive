@@ -1,0 +1,30 @@
+.buttons {
+    background-color: white;
+    color: black;
+    border: 3px solid rgb(163, 163, 253);
+    border-radius: 4px;
+    height: 80px;
+    width: 250px;
+    padding: 10px 15px 10px 15px;
+    font-size: medium;
+    }
+
+.buttons:hover, .existingUserBtn:hover{
+    background-color: rgb(163, 163, 253);
+    transition-duration: 0.9s;
+}
+
+.existingUserBtn{
+    background-color: white;
+    color: black;
+    border: 3px solid rgb(163, 163, 253);
+    border-radius: 4px;
+    height: 40px;
+    width: 160px;
+    padding: 10px 15px 10px 15px;
+    font-size: medium;
+}
+
+h2 {
+    font-family: Arial, Helvetica, sans-serif;
+}
