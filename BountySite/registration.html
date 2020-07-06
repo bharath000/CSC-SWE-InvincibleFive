@@ -8,7 +8,7 @@
 </head>
 <body>
     <br style=“height:900px”;><br>
-    <img div class="gallery" src="deliveryStock.jpg" alt="stock1" style="padding-left:750px"> 
+    <img div class="gallery" src="deliveryStock.jpg" alt="stock1" style="display:block; margin-left:auto; margin-right:auto; width:50%;"> 
     <h2 align="center">Register as a: </h2>
 
     <div id ="content" align="center">
@@ -25,7 +25,8 @@
     <br style=“height:900px”;><br>
 
     <div id="Volunteer" align="center" style="display:none;">
-        <form>
+      <h3>Volunteer Registration</h3>
+        <form action="welcome.php">
             <label for="fname">First Name: </label>
             <input type="text" id="fName" name="fName"><br><br>
             <label for="lName">Last Name: </label>
@@ -42,7 +43,8 @@
     <br style=“height:900px”;><br>
 
     <div id="Restaurant" align="center" style="display:none;">
-        <form>
+      <h3>Restaurant Registration</h3>
+        <form action="welcome.php">
             <label for="rName">Restaurant Name: </label>
             <input type="text" id="rName" name="rName"><br><br>
             <label for="rAddress">Address Line 1: </label>
@@ -62,7 +64,8 @@
     <br style=“height:900px”;><br>
 
     <div id="Charity" align="center" style="display:none;">
-        <form>
+      <h3>Charity Registration</h3>
+        <form action="welcome.php">
             <label for="cName">Charity Name: </label>
             <input type="text" id="cName" name="cName"><br><br>
             <label for="cAddress">Address: </label>
@@ -79,25 +82,34 @@
         </form>
     </div>
 
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-animate.js"></script>
+
     <script type="text/javascript">
-        function showCharity() {
-            var x = document.getElementById("Charity");
-            if (x.style.display === "none") {
-              x.style.display = "block";
-            } else {
-              x.style.display = "none";
-            }
-          }
 
-          function showRestaurant() {
-            var x = document.getElementById("Restaurant");
-            if (x.style.display === "none") {
-              x.style.display = "block";
-            } else {
-              x.style.display = "none";
+      
+          function showCharity() {
+              var x = document.getElementById("Charity");
+              if (x.style.display === "none") {
+                x.style.display = "block";
+              } else {
+                x.style.display = "none";
+              }
             }
-          }
+      
 
+      
+            function showRestaurant() {
+              var x = document.getElementById("Restaurant");
+              if (x.style.display === "none") {
+                x.style.display = "block";
+              } else {
+                x.style.display = "none";
+              }
+            }
+      
+
+     
           function showVolunteer() {
             var x = document.getElementById("Volunteer");
             if (x.style.display === "none") {
@@ -106,6 +118,7 @@
               x.style.display = "none";
             }
           }
+        
 
     </script>
 </body>
