@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="bountyStyle.css">
+    <title>Volunteer Home</title>
+</head>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<body>
+
+    <br style=“height:900px”;><br>
+    <div ng-app="" ng-init="userName='Wendy'">
+        <h3 align="center">Welcome back, {{userName}}!</h3>
+
+        <div id="tableDiv">
+        <h4>Pending Orders:</h4>
+        <table ng-init="orderNum='22213344';RestaurantName='Metro Diner';foodType='Produce'">
+            <!---ABOVE WILL BE REPLACED WITH DATABASE INFO-->
+            <tr>
+              <th>Order Number</th>
+              <th>Restaurant Name</th>
+              <th>Food type</th>
+            </tr>
+            <tr>
+              <td>#8823445</td>
+              <td>Chili's</td>
+              <td>Produce</td>
+            </tr>
+            <tr>
+              <td>#8823435</td>
+              <td>Red Lobster</td>
+              <td>Seafood</td>
+            </tr>
+            <tr>
+                <td>#{{orderNum}}</td>
+                <td>{{RestaurantName}}</td>
+                <td>{{foodType}}</td>
+              </tr>
+          </table>
+        </div>
+         <br style=“height:900px”;><br>
+
+        <div id="tableDiv">
+        <h4>Past Deliveries:</h4>
+        <table style="width:100%">
+            <tr>
+              <th>Order Number</th>
+              <th>Restaurant Name</th>
+              <th>Food type</th>
+            </tr>
+            <tr>
+              <td>#8823425</td>
+              <td>Domino's</td>
+              <td>Produce</td>
+            </tr>
+            <tr>
+              <td>#8823415</td>
+              <td>Red Lobster</td>
+              <td>Seafood</td>
+            </tr>
+          </table>
+        </div>
+    </div>
+</body>
+</html>
